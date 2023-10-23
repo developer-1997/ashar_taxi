@@ -1,0 +1,108 @@
+.logoContainerStyle { 
+    margin-bottom: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.logoImgStyle {
+    max-width: 155px;
+}
+#rightBoxContainer {
+    height: 100vh;
+    margin: 0;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    box-sizing: border-box;
+}
+.contentForm {
+    padding-left: 60px;
+    max-width: 500px;
+    box-sizing: border-box;
+}
+.otpFormTitle {
+    font-size: 26px !important;
+    text-align: center;
+    color: #090168;
+    margin-bottom: 40px !important;
+}
+.otpFormParagraph {
+    font-size: 20px;
+    color: #8f8f9c;
+    margin-bottom: 40px !important;
+}
+.otpFormParagraph b {
+    display: block;
+    color: #1f1f1f;
+}
+.isResendHeading {
+    font-size: 20px !important;
+    text-align: center;
+    width: 100%;
+    font-weight: 700;
+    color: #3d3d3d;
+    margin-top: 40px !important;
+}
+.backToHomeContainer {
+    flex-grow: 1;
+    width: 100%;
+    align-items: flex-end;
+}
+.backbtn {
+    color: #828282;
+    font-weight: 600;
+    text-decoration: underline !important;
+    cursor: pointer;
+    font-size: 18px !important;
+}
+@media only screen and (max-width: 900px) {
+    #rightBoxContainer {
+        height: 50vh;
+        padding: 10px 20px;
+        align-items: center;
+        min-height: 400px;
+    }
+    .contentForm {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        width: auto !important;
+    }
+    .logoContainerStyle {  
+        margin-bottom: 20px;
+    }
+    .logoImgStyle {
+        max-width: 80px;
+    }
+    .otpFormTitle {
+        font-size: 24px !important;
+        margin-bottom: 20px !important;
+    }
+    .otpFormParagraph {
+        font-size: 14px !important;
+        margin-bottom: 20px !important;
+    }
+    .isResendHeading {
+        font-size: 14px !important;
+        margin-top: 5px !important;
+    }
+    .MuiInputBase-fullWidth {
+        min-height: 60px !important;
+        font-size: 15px !important;
+    }
+    .MuiButton-fullWidth {
+        font-size: 16px !important;
+        margin-top: 0 !important;
+        padding: 10px !important;
+    }
+    .MuiGrid-spacing-xs-3 {
+        width: 100% !important;
+        margin: 0 !important;
+    }
+    .MuiGrid-spacing-xs-3 > .MuiGrid-item {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+}

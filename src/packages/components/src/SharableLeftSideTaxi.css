@@ -1,0 +1,149 @@
+.sharableLeftSideContent {
+    height: 100%;
+}
+.sharableLeftSideContent .container {
+    background-image: url("../../blocks/email-account-login/assets/taxiBackgroundWeb.png");
+    border-radius: 0;
+    width: 100%;
+    padding:75px 60px;
+    position:relative;
+    box-sizing: border-box;
+    max-height: 740px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    box-shadow: none;
+}
+.sharableLeftSideContent .container .vectorShape {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-size: contain;
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+.logoImage{
+    width: 120px;
+    height: 53px;
+    margin-left: 10px;
+}
+
+.sharableLeftSideContent .container .contentContainer {
+    max-width: 540px;
+    border-radius: 20px;
+    color: #fff;
+    position: relative;
+}
+.sharableLeftSideContent .contentContainer .contentArea {
+    padding: 35px 35px 240px;
+    font-size: 24px;
+}
+.sharableLeftSideContent .contentContainer .title {
+    padding-bottom: 10px;
+    display: flex;
+}
+.sharableLeftSideContent .containerleftSideBody .imageContainer {
+    position:relative;
+    top: -200px;
+    width: 100%;
+}
+.sharableLeftSideContent .container .imageContainer img {
+    width: 100%;
+    max-width: 655px;
+    transform: scale(1.1);
+    margin: 0 auto;
+    display:block;
+}
+.leftSideTittle.font {
+    font-size: 36px;
+    font-weight: 600px;
+    padding-bottom: 0 !important;
+}
+
+.leftSideBody.font {
+    font-size: 24px;
+    font-weight: 400px;
+}
+
+@media only screen and (max-width: 1280px) {
+    .sharableLeftSideContent {
+        height: 700px;
+    }
+    .sharableLeftSideContent .container {
+        background-size: 96% 100%;
+        min-height: auto;
+    }
+    .sharableLeftSideContent .container .imageContainer {
+        margin-bottom: -200px;
+    }
+    .sharableLeftSideContent .container {
+        padding: 80px 80px;
+        min-height: auto;
+        background-image: url("../../blocks/email-account-login/assets/taxiMobile.png");
+    }
+    .sharableLeftSideContent .contentContainer .contentArea {
+        padding: 0px 20px 130px;
+    }
+    .leftSideTittle.font {
+        font-size: 36px;
+        font-weight: 600px;
+        padding-bottom: 0 !important;
+    }
+    .leftSideBody.font {
+        font-size: 24px;
+        font-weight: 500px;
+    }
+   
+}
+@media only screen and (max-width: 767px) {
+    .sharableLeftSideContent {
+        height: 640px;
+    }
+    .logoImage{
+        width: 72px;
+        height: 32px;
+    }
+
+    .sharableLeftSideContent .container {
+        background-image: url("../../blocks/email-account-login/assets/taxiBackgroundWeb.png");
+        padding:80px 40px;
+    }
+    .sharableLeftSideContent .container .imageContainer img {
+        width: 98%;
+    }
+    .leftSideTittle.font {
+        font-size: 24px;
+        font-weight: 600px;
+        padding-bottom: 0 !important;
+    }
+    .leftSideBody.font {
+        font-size: 18px;
+        font-weight: 500px;
+    }
+}
+
+@media only screen and (max-width: 510px) {
+    .sharableLeftSideContent {
+        height: 480px;
+    }
+    .sharableLeftSideContent .contentContainer .contentArea {
+        padding: 0px 20px 130px;
+    }
+    .sharableLeftSideContent .container .imageContainer {
+        top: -110px;
+    }
+    .sharableLeftSideContent .container .imageContainer {
+        margin-bottom: -110px;
+    }
+    .sharableLeftSideContent .container {
+        padding: 40px 30px 0px 30px;
+    }
+    .leftSideTittle.font {
+        font-size: 24px;
+        padding-bottom: 0 !important;
+    }
+    .leftSideBody.font {
+        font-size: 18px;
+    }
+}

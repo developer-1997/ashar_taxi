@@ -1,0 +1,192 @@
+@import url("../../../web/src/GlobleStyle.css");
+
+.NavbarContainerOuterBox {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    background-color: #f5faff;
+    margin: auto;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    padding-top: 1.5% ;
+    padding-bottom: 1.5% ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 700;
+}
+
+.LogoBoxForNavbar {
+    width: 6%;
+    margin-left: 2% !important;
+}
+.headerLogoImage{
+    width: 100%;
+}
+
+.LogoBoxForNavbar>img {
+    width: 100%;
+}
+
+.avatarBoxAndDownIconBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right:3% ;
+}
+
+.downArrowIconForNavbar {
+    color: black;
+}
+
+.loginButtonNavbar {
+    font-size: 1rem !important;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+    background-color: #090168 !important;
+    color: white !important;
+    text-transform: none !important;
+    margin-right: 2% !important;
+}
+.avatarBoxAndDownIconBox svg {
+    color: rgba(0, 0, 0, 0.8);
+    margin-left: -10px;
+}
+.profileDorpdown {
+    padding: 12px 20px !important;
+    transition: all .15s linear;
+}
+.profileDorpdown:hover {
+    background-color:rgba(5, 191, 97, .1) !important;
+}
+.profileDorpdown img{
+    width: 17px;
+    height: 17px;
+    object-fit: contain;
+    display: inline-block;
+    margin-right: 10px;
+    opacity: .8;
+}
+
+.MuiListItem-root .MuiListItem-root{
+    display: flex !important;
+}
+
+.loginText {
+    font-family: var(--outfitMedium) !important; 
+    font-size: 22px;
+}
+.profileDorpdown p {
+    font-family: var(--outfitRegular) !important;
+    font-size: 16px;
+    color: #3f3f3f;
+}
+hr.MuiDivider-root {
+    margin: 0 12px !important;
+}
+.mainBody{
+    padding: 16px 50px 34px;
+    background-color: #f8f8fd;
+}
+.mainBody .mainBox{
+    background-color: #ffffff;
+    padding: 32px 34px 111px 32px;
+    border-radius: 10px;
+}
+.mainBody .mainBox .heading{
+    font-family: var(--outfitMedium);
+    font-size: 36px;
+    color: #3f3f3f;
+    margin: 0;
+}
+.mainBody .mainBox .text{
+    margin-top: 16px;
+    font-size: 22px;
+    color: #3f3f3f;
+    font-family: var(--outfitRegular);
+}
+.mainBody .mainBox .text br{
+    width: 100%;
+    margin: 16px;
+    display: block;
+}
+@media all and (min-width:890px) and (max-width:1366px) {
+    .NavbarContainerOuterBox {
+        padding-top: 1.5% ;
+        padding-bottom: 1.5% ;
+    }
+
+    .LogoBoxForNavbar {
+        width: 7.5%;
+    }
+
+    .loginButtonNavbar {
+        margin-right: 4% !important;
+    }
+    .avatarBoxAndDownIconBox {
+        
+        margin-right:4% ;
+    }
+
+}
+
+@media all and (min-width:550px) and (max-width:889px) {
+    .NavbarContainerOuterBox {
+        padding-top: 1.5% ;
+        padding-bottom: 1.5% ;
+    }
+    .LogoBoxForNavbar {
+        width: 12%;
+    }
+
+    .loginButtonNavbar {
+        margin-right: 6% !important;
+    }
+    .avatarBoxAndDownIconBox {
+        
+        margin-right:5% ;
+    }
+}
+
+@media all and (min-width:350px) and (max-width:549px) {
+    .NavbarContainerOuterBox {
+        padding-top: 2% ;
+        padding-bottom: 2% ;
+    }
+
+    .LogoBoxForNavbar {
+        width: 17%;
+    }
+.loginButtonNavbar{
+    font-size:0.85rem !important;
+    padding-left:1.5rem !important;
+    padding-right:1.5rem !important;
+    margin-right:7% !important;
+}
+.avatarBoxAndDownIconBox {
+        
+    margin-right:5% ;
+}
+}
+
+@media all and (min-width:100px) and (max-width:350px) {
+    .NavbarContainerOuterBox {
+        padding-top: 1.5% ;
+        padding-bottom: 1.5% ;
+       
+    }
+
+    .LogoBoxForNavbar {
+        width: 22%;
+    }
+    .loginButtonNavbar{
+        font-size:0.7rem !important;
+        padding-left:1.3rem !important;
+        padding-right:1rem !important;
+        margin-right:7% !important;
+    }
+    .avatarBoxAndDownIconBox {
+        
+        margin-right:5% ;
+    }
+}
+

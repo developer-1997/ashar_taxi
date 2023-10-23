@@ -1,0 +1,65 @@
+{
+  "id": "storelocator2",
+  "version": "0.0.2",
+  "status": "preAlpha",
+  "path": "./packages/blocks/storelocator2",
+  "assembler-adapters": [],
+  "mobile": {
+    "merge-engine-navigation": {},
+    "assembler-exports": [
+      "Storelocator2"
+    ],
+    "assembler-dependencies": [],
+    "catalog-dependencies": [
+      "core",
+      "utilities"
+    ],
+    "assembler-devDependencies": [],
+    "merge-engine-screens": {
+      "Storelocator2": {
+        "file": "Storelocator2.tsx",
+        "extends": "Storelocator2Controller",
+        "ui-elements": [],
+        "imports": [
+          {
+            "value": "Storelocator2Controller",
+            "path": "./Storelocator2Controller"
+          },
+          {
+            "value": "{Props}",
+            "path": "./Storelocator2Controller"
+          }
+        ]
+      }
+    }
+  },
+  "web": {
+    "merge-engine-navigation": {},
+    "assembler-exports": [
+      "Storelocator2"
+    ],
+    "assembler-dependencies": [],
+    "catalog-dependencies": [
+      "core",
+      "utilities"
+    ],
+    "assembler-devDependencies": [],
+    "merge-engine-screens": {
+      "Storelocator2": {
+        "file": "Storelocator2.web.tsx",
+        "extends": "Storelocator2Controller",
+        "ui-elements": [],
+        "imports": [
+          {
+            "value": "Storelocator2Controller",
+            "path": "./Storelocator2Controller"
+          },
+          {
+            "value": "{Props}",
+            "path": "./Storelocator2Controller"
+          }
+        ]
+      }
+    }
+  }
+}

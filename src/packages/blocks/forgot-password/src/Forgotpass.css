@@ -1,0 +1,165 @@
+.forgotpass .rightBox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 90px 120px;
+    margin: 0px auto;
+    max-height: 100%;
+    overflow: hidden auto;
+    box-sizing: border-box;
+}
+.forgotpass .rightBox .forgotpassForm {
+    max-width: 535px;
+    width: 100%;
+}
+.forgotpassForm .errorConfirmPass label.MuiFormLabel-root, 
+.forgotpassForm .errorConfirmPass input, 
+.forgotpassForm .errorConfirmPass input::placeholder {
+    color: #ff4452 !important;
+}
+.forgotpass .errorConfirmPass div.MuiInput-root {
+    border: 1px solid #ff4452 !important;
+}
+.forgotpass .brandLogo {
+    padding: 40px 30px 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.forgotpass .brandLogo svg {
+    fill:#979797
+}
+.forgotpass .backbtn {
+    position: absolute;
+    bottom: 1.875rem;
+    right: 6.063rem;
+    color: #828282;
+    font-weight: 600;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.forgotpassHeader {
+    margin: 0 0 10px 10px;
+}
+.forgotpassHeader .title {
+    font-size: 24px;
+    color: #090168;
+    text-transform: capitalize;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 40px;
+}
+/* .forgotpassHeader .title::before {
+    content: "";
+    width: 16px;
+    height: 6px;
+    background-color: #090168;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 45px;
+    border-radius: 10px;
+} */
+.forgotpassHeader .paragraph {
+  font-size: 20px;
+  color: #8f8f9c;
+}
+.forgotpassHeader .paragraph b {
+    display: block;
+    color: #1f1f1f;
+}
+.forgotpassOtpForm {
+    margin-top: 45px !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+.forgotpassOtpForm .forgotpassOtpInput {
+    display:flex;
+}
+.forgotpassOtpForm .forgotpassOtpInput > div {
+    margin-right: 26px;
+}
+.forgotpassOtpForm .verifyBtn{
+    background-color: #090168;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    text-transform: capitalize;
+    margin-top: 20px;
+}
+.resend {
+    color: #090168;
+    cursor: pointer;
+}
+.forgotpassOtpForm .disableBtn{
+    background-color: #c8c7c7;
+    padding: 15px;    
+    border-radius: 10px;
+    color:#fff !important;
+    font-size: 18px;
+    text-transform: capitalize;
+    margin-top: 20px;
+}
+.forgotpassOtpForm .formInputOutline {
+    border: 1px solid #c5c5c5;
+    padding: 5px 15px;
+    border-radius: 5px;
+    margin: 5px 0;
+    font-size: 30px;
+    font-weight: 400;
+    max-width: 85px;
+    min-height: 78px;
+    box-sizing: border-box;
+}
+.forgotpassOtpForm .IsResend {
+    display: flex;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+.forgotpassOtpForm .isResendHeading {
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 700;
+    color: #3d3d3d;
+  }
+@media only screen and (max-width: 1280px) {
+    .forgotpass .rightBox .forgotpassForm {
+        max-width: 99%;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .forgotpass .rightBox {
+        padding: 20px 50px 120px 20px;
+    }
+    .forgotpass .backbtn {
+        right: 40px;
+    }
+}
+
+@media only screen and (max-width: 510px) {
+    .forgotpassOtpForm {
+        margin-top: 30px auto 0!important;
+    }
+    .forgotpassOtpForm .verifyBtn{
+        margin-top: 10px;
+    }
+    .forgotpassOtpForm .disableBtn{
+        margin-top: 10px;
+    }
+    .forgotpassOtpForm .forgotpassOtpInput > div {
+        margin-right: 12px;
+    }
+    .forgotpassHeader .paragraph b {
+        display: inline;
+    }
+}
+@media only screen and (max-width: 490px) {
+    .forgotpass .rightBox {
+        padding: 20px 50px 120px 20px;
+    }
+    .forgotpass .backbtn {
+        right: 40px;
+    }
+}

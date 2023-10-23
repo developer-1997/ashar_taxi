@@ -1,0 +1,261 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LoginWithMobileNo Login with Mobile No 1`] = `
+<WithStyles(ForwardRef(Grid))
+  container={true}
+>
+  <WithStyles(ForwardRef(Grid))
+    item={true}
+    lg={6}
+    md={12}
+    style={
+      Object {
+        "width": "100%",
+      }
+    }
+  >
+    <SharableLeftSideTaxi />
+  </WithStyles(ForwardRef(Grid))>
+  <WithStyles(ForwardRef(Grid))
+    item={true}
+    lg={6}
+    md={12}
+    style={
+      Object {
+        "position": "relative",
+        "width": "100%",
+      }
+    }
+  >
+    <Styled(MuiBox)
+      sx={
+        Object {
+          "alignItems": "center",
+          "boxSizing": "border-box",
+          "display": "flex",
+          "flexDirection": "column",
+          "margin": "0px auto",
+          "maxHeight": "100vh",
+          "overflow": "hidden auto",
+          "padding": "30px 30px",
+          "width": "100%",
+        }
+      }
+    >
+      <Styled(MuiBox)
+        className="logoContainerStyle"
+        display="flex"
+        flexDirection="row"
+        justifyContent="flex-end"
+      >
+        <Link
+          replace={false}
+          to="/LandingPage"
+        >
+          <img
+            alt="Logo"
+            className="logoImgStyle"
+            src={
+              Object {
+                "testUri": "../../../packages/blocks/email-account-login/assets/logo.png",
+              }
+            }
+          />
+        </Link>
+      </Styled(MuiBox)>
+      <Styled(MuiBox)
+        alignItems="center"
+        display="flex"
+        justifyContent="center"
+      >
+        <Styled(a)
+          component="h2"
+          style={
+            Object {
+              "color": "#090069",
+              "display": "inline",
+              "margin": 0,
+              "paddingBottom": "15px",
+              "position": "relative",
+              "textDecoration": "none",
+            }
+          }
+          varint="h4"
+        >
+          <span
+            className="loginHeader"
+          >
+            Login with OTP
+          </span>
+        </Styled(a)>
+      </Styled(MuiBox)>
+      <Formik
+        initialValues={
+          Object {
+            "attributes": Object {
+              "full_phone_number": "",
+            },
+            "type": "sms_account",
+          }
+        }
+        onSubmit={[Function]}
+        validationSchema={
+          ObjectSchema {
+            "_blacklist": RefSet {
+              "list": Set {},
+              "refs": Map {},
+            },
+            "_conditions": Array [],
+            "_defaultDefault": [Function],
+            "_deps": Array [],
+            "_excludedEdges": Array [],
+            "_exclusive": Object {},
+            "_mutate": undefined,
+            "_nodes": Array [
+              "attributes",
+              "type",
+            ],
+            "_options": Object {
+              "abortEarly": true,
+              "recursive": true,
+            },
+            "_type": "object",
+            "_typeError": [Function],
+            "_whitelist": RefSet {
+              "list": Set {},
+              "refs": Map {},
+            },
+            "fields": Object {
+              "attributes": ObjectSchema {
+                "_blacklist": RefSet {
+                  "list": Set {},
+                  "refs": Map {},
+                },
+                "_conditions": Array [],
+                "_defaultDefault": [Function],
+                "_deps": Array [],
+                "_excludedEdges": Array [],
+                "_exclusive": Object {},
+                "_mutate": undefined,
+                "_nodes": Array [
+                  "full_phone_number",
+                ],
+                "_options": Object {
+                  "abortEarly": true,
+                  "recursive": true,
+                },
+                "_type": "object",
+                "_typeError": [Function],
+                "_whitelist": RefSet {
+                  "list": Set {},
+                  "refs": Map {},
+                },
+                "fields": Object {
+                  "full_phone_number": StringSchema {
+                    "_blacklist": RefSet {
+                      "list": Set {},
+                      "refs": Map {},
+                    },
+                    "_conditions": Array [],
+                    "_deps": Array [],
+                    "_exclusive": Object {
+                      "required": true,
+                    },
+                    "_mutate": undefined,
+                    "_options": Object {
+                      "abortEarly": true,
+                      "recursive": true,
+                    },
+                    "_type": "string",
+                    "_typeError": [Function],
+                    "_whitelist": RefSet {
+                      "list": Set {},
+                      "refs": Map {},
+                    },
+                    "tests": Array [
+                      [Function],
+                    ],
+                    "transforms": Array [
+                      [Function],
+                    ],
+                    "type": "string",
+                  },
+                },
+                "tests": Array [],
+                "transforms": Array [
+                  [Function],
+                ],
+                "type": "object",
+              },
+              "type": StringSchema {
+                "_blacklist": RefSet {
+                  "list": Set {},
+                  "refs": Map {},
+                },
+                "_conditions": Array [],
+                "_deps": Array [],
+                "_exclusive": Object {
+                  "required": true,
+                },
+                "_mutate": undefined,
+                "_options": Object {
+                  "abortEarly": true,
+                  "recursive": true,
+                },
+                "_type": "string",
+                "_typeError": [Function],
+                "_whitelist": RefSet {
+                  "list": Set {},
+                  "refs": Map {},
+                },
+                "tests": Array [
+                  [Function],
+                ],
+                "transforms": Array [
+                  [Function],
+                ],
+                "type": "string",
+              },
+            },
+            "tests": Array [],
+            "transforms": Array [
+              [Function],
+            ],
+            "type": "object",
+          }
+        }
+      >
+        <Component />
+      </Formik>
+    </Styled(MuiBox)>
+    <WithStyles(ForwardRef(Grid))
+      item={true}
+      xs={12}
+    >
+      <Styled(MuiBox)>
+        <Link
+          replace={false}
+          to="/LandingPage"
+        >
+          <WithStyles(ForwardRef(Button))
+            className="normalText fontWeightMedium"
+            style={
+              Object {
+                "bottom": "1.875rem",
+                "color": "#828282",
+                "cursor": "pointer",
+                "fontWeight": "600",
+                "position": "absolute",
+                "right": "6.063rem",
+                "textDecoration": "underline",
+              }
+            }
+          >
+             Back to home
+          </WithStyles(ForwardRef(Button))>
+        </Link>
+      </Styled(MuiBox)>
+    </WithStyles(ForwardRef(Grid))>
+  </WithStyles(ForwardRef(Grid))>
+</WithStyles(ForwardRef(Grid))>
+`;

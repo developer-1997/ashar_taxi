@@ -1,0 +1,235 @@
+@import url('../../../web/src/GlobleStyle.css');
+
+
+.CardBoxCatalogue {
+  border-radius: 8px;
+  border: 1px solid #dfdfdf;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFF;
+  gap: 2%;
+  padding: 4%;
+  cursor: pointer;
+  min-width: 318px;
+  height: 401px;
+  margin: 0.5rem;
+}
+
+.Link {
+  background-color : #05BE61;
+  border-radius: "6px";
+  text-decoration:  "none";
+}
+.CardBoxCatalogue:hover  .buttonForBookNowWideRange{
+  background-color: #090168 !important;
+}
+
+.CardBoxCatalogue>div {
+  width: 100%;
+  height: 100%;
+}
+
+.CardImageBoxCatalogue {
+  height: 50%;
+  border-radius: 10px;
+}
+
+.CardImageBoxCatalogue>img {
+  width: 100%;
+  height: 180px !important;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.CardTitleBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #1F1F1F;
+
+}
+.featuretileHeader{
+  font-family:var(--outfitSemiBold) !important;
+  font-size: 32px !important;
+  padding-left: 10px;
+  color: #3f3f3f;
+  margin: 45px 0 15px !important;
+}
+
+.featuretileText{
+  font-family:var(--outfitMedium) !important;
+}
+
+
+.CardFeatureboxCatalogue {
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.CardFeatureboxCatalogue>div {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 5px;
+  color: #010039;
+
+}
+.CardFeatureboxCatalogue .carDescription {
+  max-width: 80px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.featureCaption{
+  font-family:var(--outfitMedium) !important;
+  font-size: 16px !important;
+  text-transform: capitalize;
+
+}
+.CardFeatureboxCatalogue div>img {
+  height: 20px;
+  width: 20px;
+
+}
+
+.notAvailableCar {
+  padding:10px;
+  display:flex;
+  align-items: center;
+  border-radius: 5px;
+  color: red;
+  height:80px;
+  justify-content:center;
+  background-color:pink;
+  width:70%;
+  margin:10px;
+}
+
+.CardButtonboxCatalogue > button {
+  width: 100%;
+  border-radius: 8px;
+  background-color: #05BE61;
+  font-weight: 600;
+  text-transform: none !important;
+  font-size: 1.3rem;
+  margin-top: 15px;
+}
+
+.CardButtonboxCatalogue>button .MuiTypography-colorPrimary {
+  color: #FFF !important;
+}
+
+.noRecordFound{
+  justify-content: center;
+  display: flex;
+  margin: 50px;
+  
+}
+
+.CardButtonboxCatalogue>button:hover {
+  background-color: #05BE61 !important; 
+}
+
+.wideRangeCardsGridTaxiContainerCatalogue .wideRangeCardsGridTaxiCatalogue {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+  margin-bottom: 70px;
+}
+
+@media only screen and (max-width: 1350px) {
+  .CardBoxCatalogue {
+    min-height: 400px;
+    width: 31%;
+    min-width: 368px;
+    padding: 20px;
+    justify-content: space-between;
+  }
+  .wideRangeCardsGridTaxiContainerCatalogue .wideRangeCardsGridTaxiCatalogue {
+    display: flex;
+    /* grid-template-columns: repeat(2, 1fr); */
+    flex-wrap: wrap;
+  
+  }
+}
+
+@media only screen and (max-width: 1310px) {
+  .CardBoxCatalogue {
+    min-height: 400px;
+    width: 31%;
+    min-width: 318px;
+    padding: 20px;
+    justify-content: space-between;
+  }
+  .wideRangeCardsGridTaxiContainerCatalogue .wideRangeCardsGridTaxiCatalogue {
+    display: flex;
+    flex-wrap: wrap;
+  
+  }
+}
+@media all and (min-width:992px) and (max-width:1300px) {
+  .CardBoxCatalogue {
+    padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .CardBoxCatalogue {
+    min-height: 400px;
+    width: 46%;
+    min-width: auto;
+    justify-content: space-between;
+  }
+  .CardBoxCatalogue > div {
+    margin-top: 10px;
+}
+.CardImageBoxCatalogue > img {
+  margin-top: -12px;
+}
+.wideRangeCardsGridTaxiContainerCatalogue .wideRangeCardsGridTaxiCatalogue {
+  display: flex;
+  gap: 2px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+
+}
+}
+@media all and (min-width:601px) and (max-width:996px) {
+  .CardBoxCatalogue {
+    height: max-content;
+    width: 46%;
+  }
+  .featureCaption{
+    font-size: 14px !important;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .CardBoxCatalogue {
+    height: 400px;
+    width: 100%;
+  }
+  .featureCaption{
+    font-size: 14px !important;
+  }
+
+  .notAvailableCar{
+    width: 90%;
+  }
+}
+
+
+
+.notAvailableCar .errorIcon {
+  margin: 12px;
+  font-size: 40px;
+}
+
+.notAvailableCar .noAvailable {
+  font-size: 24px;
+}

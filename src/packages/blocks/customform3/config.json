@@ -1,0 +1,65 @@
+{
+  "id": "customform3",
+  "version": "0.0.2",
+  "status": "preAlpha",
+  "path": "./packages/blocks/customform3",
+  "assembler-adapters": [],
+  "mobile": {
+    "merge-engine-navigation": {},
+    "assembler-exports": [
+      "Customform3"
+    ],
+    "assembler-dependencies": [],
+    "catalog-dependencies": [
+      "core",
+      "utilities"
+    ],
+    "assembler-devDependencies": [],
+    "merge-engine-screens": {
+      "Customform3": {
+        "file": "Customform3.tsx",
+        "extends": "Customform3Controller",
+        "ui-elements": [],
+        "imports": [
+          {
+            "value": "Customform3Controller",
+            "path": "./Customform3Controller"
+          },
+          {
+            "value": "{Props}",
+            "path": "./Customform3Controller"
+          }
+        ]
+      }
+    }
+  },
+  "web": {
+    "merge-engine-navigation": {},
+    "assembler-exports": [
+      "Customform3"
+    ],
+    "assembler-dependencies": [],
+    "catalog-dependencies": [
+      "core",
+      "utilities"
+    ],
+    "assembler-devDependencies": [],
+    "merge-engine-screens": {
+      "Customform3": {
+        "file": "Customform3.web.tsx",
+        "extends": "Customform3Controller",
+        "ui-elements": [],
+        "imports": [
+          {
+            "value": "Customform3Controller",
+            "path": "./Customform3Controller"
+          },
+          {
+            "value": "{Props}",
+            "path": "./Customform3Controller"
+          }
+        ]
+      }
+    }
+  }
+}

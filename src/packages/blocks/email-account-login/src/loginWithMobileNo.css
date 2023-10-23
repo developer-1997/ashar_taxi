@@ -1,0 +1,78 @@
+#rightBoxContainer {
+    height: 100vh;
+    margin: 0;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    box-sizing: border-box;
+}
+.contentForm {
+    padding-left: 60px;
+    padding-right: 140px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.logoContainerStyle { 
+    width: 100%;
+    text-align: right;
+    margin-bottom: 40px;
+}
+.logoImgStyle {
+    max-width: 155px;
+}
+.backToHomeContainer {
+    flex-grow: 1;
+    width: 100%;
+    align-items: flex-end;
+}
+.backToHomeButton {
+    color: #828282;
+    font-weight: 600;
+    font-size: 18px !important;
+    text-decoration: underline !important;
+    cursor: pointer;
+    padding: 0px !important;
+}
+
+@media (max-width: 900px) {    
+    #rightBoxContainer {
+        height: 50vh;
+        padding: 10px 20px;
+        align-items: center;
+    }
+    .contentForm {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        width: auto !important;
+    }
+    .logoContainerStyle { 
+        margin-bottom: 20px;
+    }
+    .logoImgStyle {
+        max-width: 80px;
+    }
+    .loginHeader {
+        font-size: 20px;
+    }
+    .contentForm .MuiInputBase-fullWidth {
+        margin: 0 !important;
+        height: 48px !important;
+        font-size: 14px !important;
+    }
+    .contentForm img {
+        top: 12px !important;
+    }
+    .contentForm .MuiButton-fullWidth {
+        font-size: 16px !important;
+        margin-top: 0 !important;
+        padding: 10px !important;
+    }
+    .backToHomeContainer {
+        padding: 20px 0;
+    }
+    .backToHomeButton {
+        font-size: 14px !important;
+    }
+}

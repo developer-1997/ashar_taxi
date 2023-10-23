@@ -1,0 +1,142 @@
+@font-face {
+  font-family: outfitRegular;
+  src: url(../public/FontsAsherTaxi/Outfit-Regular.ttf);
+}
+
+@font-face {
+  font-family: outfitSemiBold;
+  src: url(../public/FontsAsherTaxi/Outfit-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: outfitMedium;
+  src: url(../public/FontsAsherTaxi/Outfit-Medium.ttf);
+}
+
+@font-face {
+  font-family: outfitBold;
+  src: url(../public/FontsAsherTaxi/Outfit-Bold.ttf);
+}
+
+@font-face {
+  font-family: PoppinsMedium;
+  src: url(../public/FontsAsherTaxi/Poppins-Medium.ttf);
+}
+
+@font-face {
+  font-family: PoppinsRegular;
+  src: url(../public/FontsAsherTaxi/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: PoppinsSemiBold;
+  src: url(../public/FontsAsherTaxi/Poppins-SemiBold.ttf);
+}
+
+:root {
+  --outfitRegular: 'outfitRegular', 'sans-serif';
+  --outfitSemiBold: 'outfitSemiBold', 'sans-serif';
+  --outfitMedium: 'outfitMedium', 'sans-serif';
+  --outfitBold: 'outfitBold', 'sans-serif';
+
+  --PoppinsMedium: 'PoppinsMedium', 'sans-serif';
+  --PoppinsSemiBold: 'PoppinsSemiBold', 'sans-serif';
+  --PoppinsRegular: 'PoppinsRegular', 'sans-serif';
+
+
+}
+
+.leftSideTittle {
+  font-family: var(--outfitBold) !important;
+}
+
+.leftSideBody {
+  font-family: var(--outfitRegular) !important;
+}
+
+.loginHeader {
+  font-family: var(--outfitSemiBold) !important;
+}
+
+.fontWeightMedium {
+  font-family: var(--outfitMedium) !important;
+}
+
+.leftSideTittle.font {
+  font-size: 36px;
+}
+
+.leftSideBody.font {
+  font-size: 18px;
+}
+
+.normalText {
+  text-transform: inherit !important;
+}
+
+.errorText {
+  font-family: var(--outfitRegular) !important;
+  font-size: 16px;
+  color: #f23d3d;
+}
+
+.inputText input,
+.inputText input::placeholder,
+.inputText .MuiSelect-select em,
+.inputText .fileUploadButton .MuiButton-label {
+  font-family: var(--outfitMedium) !important;
+  font-size: 16px;
+  color: #8f8f9c;
+}
+
+.inputText input::placeholder,
+.inputText .fileUploadButton .MuiButton-label {
+  opacity: .75;
+  text-transform: none;
+}
+.Toastify__toast {
+  min-height: 60px !important;
+  margin-bottom: 15px !important;
+  padding: 12px !important;
+  border-radius: 6px !important;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.errorText {
+  font-family: var(--outfitRegular) !important;
+  font-size: 16px;
+  color: #f23d3d;
+}
+.inputText input,.inputText input::placeholder, .inputText .MuiSelect-select em,.inputText .fileUploadButton .MuiButton-label{
+  font-family: var(--outfitMedium) !important;
+  font-size: 16px;
+  color: #8f8f9c;
+}
+.inputText input::placeholder, .inputText .fileUploadButton .MuiButton-label {
+  opacity: .75;
+  text-transform: none;
+}
+a.link {
+  text-align: unset !important;
+}
+.disableBtn {
+background-color: rgba(9, 0, 105,.5) !important;
+cursor: wait !important;
+}
+.Toastify__toast {
+  min-height: 60px !important;
+  margin-bottom: 15px !important;
+  padding: 12px !important;
+  border-radius: 6px !important;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+@media only screen and (max-width: 490px) {
+  .leftSideTittle.font {
+    font-size: 32px;
+  }
+
+  .leftSideBody.font {
+    font-size: 16px;
+  }
+}

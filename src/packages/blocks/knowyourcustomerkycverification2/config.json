@@ -1,0 +1,65 @@
+{
+  "id": "knowyourcustomerkycverification2",
+  "version": "0.0.2",
+  "status": "preAlpha",
+  "path": "./packages/blocks/knowyourcustomerkycverification2",
+  "assembler-adapters": [],
+  "mobile": {
+    "merge-engine-navigation": {},
+    "assembler-exports": [
+      "Knowyourcustomerkycverification2"
+    ],
+    "assembler-dependencies": [],
+    "catalog-dependencies": [
+      "core",
+      "utilities"
+    ],
+    "assembler-devDependencies": [],
+    "merge-engine-screens": {
+      "Knowyourcustomerkycverification2": {
+        "file": "Knowyourcustomerkycverification2.tsx",
+        "extends": "Knowyourcustomerkycverification2Controller",
+        "ui-elements": [],
+        "imports": [
+          {
+            "value": "Knowyourcustomerkycverification2Controller",
+            "path": "./Knowyourcustomerkycverification2Controller"
+          },
+          {
+            "value": "{Props}",
+            "path": "./Knowyourcustomerkycverification2Controller"
+          }
+        ]
+      }
+    }
+  },
+  "web": {
+    "merge-engine-navigation": {},
+    "assembler-exports": [
+      "Knowyourcustomerkycverification2"
+    ],
+    "assembler-dependencies": [],
+    "catalog-dependencies": [
+      "core",
+      "utilities"
+    ],
+    "assembler-devDependencies": [],
+    "merge-engine-screens": {
+      "Knowyourcustomerkycverification2": {
+        "file": "Knowyourcustomerkycverification2.web.tsx",
+        "extends": "Knowyourcustomerkycverification2Controller",
+        "ui-elements": [],
+        "imports": [
+          {
+            "value": "Knowyourcustomerkycverification2Controller",
+            "path": "./Knowyourcustomerkycverification2Controller"
+          },
+          {
+            "value": "{Props}",
+            "path": "./Knowyourcustomerkycverification2Controller"
+          }
+        ]
+      }
+    }
+  }
+}

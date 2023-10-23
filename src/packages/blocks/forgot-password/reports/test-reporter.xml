@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testExecutions version="1">
+    <file path="/data/home/ubuntu/Desktop/ashertaxiservices-298406-react/src/packages/blocks/forgot-password/__tests__/step-definitions/createdNewPassword.web.steps.tsx">
+        <testCase name="newPassword New password" duration="164"/>
+    </file>
+    <file path="/data/home/ubuntu/Desktop/ashertaxiservices-298406-react/src/packages/blocks/forgot-password/__tests__/step-definitions/forgotPassword.web.steps.tsx">
+        <testCase name="forgotpassword Forgot password" duration="173"/>
+    </file>
+    <file path="/data/home/ubuntu/Desktop/ashertaxiservices-298406-react/src/packages/blocks/forgot-password/__tests__/step-definitions/forgotPasswordOTPcofirmation.web.steps.tsx">
+        <testCase name="forgotPasswordOtpConfirmation Forgot password Otp" duration="216"/>
+    </file>
+</testExecutions>

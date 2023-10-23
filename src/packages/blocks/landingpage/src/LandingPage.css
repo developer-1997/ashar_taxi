@@ -1,0 +1,522 @@
+@import url('../../../web/src/GlobleStyle.css');
+
+.carRentalMianBox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px
+}
+.timeFilter .dropdownList {
+    padding: 0 !important;
+    transition: all .15s linear;
+}
+.timeFilter .dropdownList li {
+    padding: 15px;
+}
+.timeFilter .dropdownList li:hover {
+    background-color:rgba(5, 191, 97, .1);
+}
+
+.carRentalHeadingBox {
+    width: 30%;
+    text-align: center;
+    margin: 20px;
+}
+
+.carRentalHeading {
+    color: #000;
+    opacity: 0.8;
+    margin-bottom: 6px !important;
+    font-family: var(--outfitSemiBold) !important;
+
+}
+
+.carRentalsubHeading {
+    color: #696969;
+    opacity: 0.5;
+    font-family: var(--PoppinsMedium) !important;
+
+}
+
+.carRentalCardBox {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.viewAllBox {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+#viewAllText {
+    color: #1F1F1F;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: var(--PoppinsMedium) !important;
+    opacity: 0.9;
+    transition: all .15s linear;
+}
+
+#viewAllText:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.carRentalCardsGrid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2%;
+}
+
+.wideRangeMianBox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0 60px;
+}
+
+.wideRangeCardsGrid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2%;
+    margin-top: 20px;
+
+
+}
+
+.wideRangeCardBox {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.wideRangeHeadingBox {
+    width: 90%;
+    margin: 20px;
+    text-align: center;
+}
+.wideRangeCardBox .noCabs {
+    padding: 10px 20px;
+    margin-top: 30px;
+    border-radius: 6px;
+    background-color: #090168;
+    font-family: var(--outfitRegular) !important;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+}
+.wideRangeHeading {
+    color: #000;
+    opacity: 0.8;
+    font-weight: 600;
+    font-family: var(--outfitSemiBold) !important;
+    margin-bottom: 6px;
+}
+
+.wideRangesubHeading {
+    color: #696969;
+    opacity: 0.5;
+    font-weight: 600;
+    font-family: var(--PoppinsMedium) !important;
+
+}
+
+.card {
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.73);
+    box-shadow: 0px 0px 10px 0px rgba(179, 179, 179, 0.45);
+    position: relative;
+    background-color: white;
+    margin-top: 20px;
+}
+
+.card::before {
+    position: absolute;
+    background-color: #01a653;
+    width: 20px;
+    height: 20px;
+    content: "";
+    transform: rotate(45deg);
+    top: 2rem;
+    right: -0.4rem;
+    z-index: -1;
+}
+
+.card::after {
+    position: absolute;
+    background-color: #01a653;
+    color: white;
+    width: 86px;
+    border-radius: 0 0 0 15px;
+    height: 30px;
+    content: "";
+    content: attr(data-label);
+    display: flex;
+    align-items: center;
+    top: 0.7rem;
+    right: -0.65rem;
+    z-index: 1;
+    font-family: var(--PoppinsSemiBold) !important;
+
+}
+
+.shiftText {
+    font-family: var(--outfitSemiBold) !important;
+
+}
+
+.carRentalBoxImageBox {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.carRentalBoxImageBox::before {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 0.7rem;
+    right: 3.7rem;
+    width: 20px;
+    height: 30px;
+    content: "";
+    background: #01a653;
+    z-index: 1;
+}
+
+.carRentalBoxImageBox:before {
+    transform: skewX(20deg);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.carRentalBoxImageBox>img {
+    width: 85%;
+    object-fit: contain;
+    display: block;
+    margin: 60px auto 35px;
+}
+
+.rentalCardbodyBoxGreen {
+    border-radius: 0px 0px 8px 8px;
+    background: #05BF61;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 15px 0;
+    letter-spacing: 0.5px;
+}
+
+.landingPageBanner {
+    background-color: #f5faff;
+    background-size: inherit;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    max-height: 640px;
+    overflow: hidden;
+}
+
+.landingPageBanner h6 {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: normal;
+    color: #05bf61;
+    margin-bottom: 11px;
+    font-family: var(--outfitMedium) !important;
+}
+
+.landingPageBanner h1 {
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 1.38;
+    letter-spacing: normal;
+    color: #010039;
+    font-family: var(--outfitMedium) !important;
+}
+
+.landingPageBanner h1 span {
+    display: inline-block;
+}
+
+.landingPageBanner button {
+    padding: 9px 44px 9px 44px;
+    border-radius: 8px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #05be61 !important;
+    font-family: var(--outfitRegular) !important;
+    text-transform: capitalize;
+}
+
+.landingPageBanner a {
+    display: inline !important;
+}
+.landingPageBanner a:hover {
+    text-decoration: none;
+}
+
+.landingPageBanner img {
+    width: 817px;
+    height: 750px;
+    object-fit: cover;
+    margin-left: auto;
+    display: block;
+}
+
+
+@media all and (min-width:996px) and (max-width:1366px) {
+    .carRentalMianBox {
+        width: 100%;
+
+    }
+
+    .carRentalCardBox {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .carRentalCardsGrid {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 6%;
+    }
+
+    .carRentalHeadingBox {
+        height: 10%;
+        width: fit-content;
+
+    }
+
+    .LandingPageTopImageBox {
+        width: 100%;
+        height: 22%;
+    }
+
+    .wideRangeCardBox {
+
+        width: 85%;
+
+    }
+
+}
+
+@media only screen and (max-width: 1280px) {
+    .landingPageBanner {
+        padding: 20px 0;
+        background-size: contain;
+        max-height:fit-content;
+    }
+    .carRentalBoxImageBox>img {
+        width: 90%;
+        margin: 40px auto 25px;
+    }
+    
+    .landingPageBanner h6 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .rentalCardbodyBoxGreen {
+        height: 16%;
+    }
+
+    .landingPageBanner h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .landingPageBanner button {
+        font-size: 20px;
+        display: block;
+        margin: 0 auto 20px;
+
+    }
+
+    .landingPageBanner img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .landingPageBanner h6 {
+        font-size: 22px;
+    }
+
+    .landingPageBanner button {
+        font-size: 18px;
+        padding: 6px 36px;
+        margin: 0 auto 20px;
+
+    }
+
+}
+
+@media all and (min-width:601px) and (max-width:996px) {
+    .carRentalMianBox {
+        width: 100%;
+    }
+
+    .carRentalCardBox {
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+
+    }
+    .landingPageBanner{
+        max-height:fit-content;
+    }
+
+    .carRentalCardsGrid {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 6%;
+    }
+
+    .carRentalHeadingBox {
+        height: 10%;
+        width: fit-content;
+
+    }
+
+    .LandingPageTopImageBox {
+        width: 100%;
+        height: 16%;
+    }
+
+    .wideRangeMianBox {
+        padding: 110px 0 40px;
+    }
+
+    .wideRangeCardBox {
+
+        width: 85%;
+
+    }
+    .wideRangeCardsGrid {
+        height: auto;
+
+    }
+
+}
+
+@media only screen and (max-width: 810px) {
+
+    .wideRangeCardsGrid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+
+    .wideRangeCardBox {
+        width: 85%;
+    }
+
+    .CardBox {
+        border-radius: 8px;
+        border: 1px solid #dfdfdf;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #FFF;
+        height: auto;
+        z-index: -700;
+        padding: 4%;
+    }
+     .landingPageBanner h1 {
+        font-size: 36px;
+    }
+}
+
+@media all and (min-width:471px) and (max-width:600px) {
+    .carRentalMianBox {
+        width: 100%;
+    }
+
+    .carRentalCardBox {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .carRentalCardsGrid {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3%;
+    }
+
+    .carRentalHeadingBox {
+        height: 10%;
+        width: fit-content;
+
+    }
+
+    .LandingPageTopImageBox {
+        width: 100%;
+        height: 10%;
+    }
+}
+
+@media only screen and (max-width:470px) {
+    .carRentalMianBox {
+        width: 100%;
+        padding: 70px 20px 0;
+    }
+
+    .carRentalCardBox {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+
+    }
+
+    .carRentalCardsGrid {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2%;
+    }
+
+    .carRentalHeadingBox {
+        height: fit-content;
+        width: fit-content;
+
+    }
+
+    .rentalCardbodyBoxGreen {
+        height: 12%;
+    }
+
+    .LandingPageTopImageBox {
+        width: 100%;
+        height: 7%;
+    }
+}

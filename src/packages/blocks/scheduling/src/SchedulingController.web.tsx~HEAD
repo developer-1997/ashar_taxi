@@ -1,0 +1,216 @@
+import { IBlock } from "../../../framework/src/IBlock";
+import { Message } from "../../../framework/src/Message";
+import { BlockComponent } from "../../../framework/src/BlockComponent";
+import MessageEnum, {
+    getName,
+} from "../../../framework/src/Messages/MessageEnum";
+import { runEngine } from "../../../framework/src/RunEngine";
+
+export interface Props {
+    id: string;
+}
+
+interface SchedulingList {
+    id: string;
+    type: string;
+    attributes: {
+        id: number;
+        status: string;
+        shift: string;
+        scheduled_pick_up: string;
+        scheduled_drop_off: string;
+        scheduled_depot_location?: string;
+        created_at: string;
+        cab_name: string;
+        price: number;
+        cab_image: string;
+    }
+}
+interface S {
+    token: string | null;
+    CancelModal: boolean;
+    schedulingList: SchedulingList[];
+    PreviousSchedulingList: boolean;
+    PopupId: string;
+}
+
+interface SS {
+    id: string;
+}
+
+export default class SchedulingControllerWeb extends BlockComponent<Props, S, SS> {
+    getUpcomingBookingHistoryApiId: any;
+    getPreviousBookingHistoryApiId: any;
+    constructor(props: Props) {
+        super(props);
+        this.receive = this.receive.bind(this);
+        this.handleOpenCancelModal = this.handleOpenCancelModal.bind(this)
+        this.handleCloseCancelModal = this.handleCloseCancelModal.bind(this);
+        this.handleCancelBooking = this.handleCancelBooking.bind(this)
+        this.handleUpcomingBookingHistory = this.handleUpcomingBookingHistory.bind(this)
+        this.handlePreviousBookingHistory = this.handlePreviousBookingHistory.bind(this)
+        this.subScribedMessages = [
+            getName(MessageEnum.RestAPIResponceMessage),
+            getName(MessageEnum.SessionSaveMessage),
+            getName(MessageEnum.SessionResponseMessage)
+        ];
+
+        this.state = {
+            token: window.localStorage.getItem('token'),
+            CancelModal: false,
+            schedulingList: [],
+            PreviousSchedulingList: false,
+            PopupId: ''
+        };
+        runEngine.attachBuildingBlock(this as IBlock, this.subScribedMessages);
+    }
+
+    async componentDidMount() {
+        super.componentDidMount();
+        this.getUpcomingBookingHistory(this.state.token)
+    }
+
+    handleOpenCancelModal(id: number) {
+        this.setState({ CancelModal: true, PopupId: id.toString() })
+    }
+
+    handleCloseCancelModal() {
+        this.setState({ CancelModal: false })
+    }
+
+    handleCancelBooking(id: string) {
+        const payload = {
+            booking_id: id
+        }
+        this.postCancelBooking(this.state.token, payload)
+    }
+    handleUpcomingBookingHistory() {
+        this.setState({ PreviousSchedulingList: false })
+        this.getUpcomingBookingHistory(this.state.token)
+    }
+
+    handlePreviousBookingHistory() {
+        this.setState({ PreviousSchedulingList: true })
+        this.getPreviousBookingHistory(this.state.token)
+    }
+
+    changeFormat(date: string, isTime: boolean = true) {
+        const newDate = new Date(date)
+        var hours = newDate.getHours();
+        var minutes = newDate.getMinutes();
+        var ampm = hours >= 12 ? 'PM' : 'AM';
+        hours = hours % 12;
+        hours = hours ? hours : 12; // the hour '0' should be '12'
+        minutes = minutes < 10 ? 0 + minutes : minutes;
+        var strTime = (hours + '').padStart(2, "0") + ':' + (minutes + '').padStart(2, "0") + ' ' + ampm;
+        return `${newDate.getDate()}/${newDate.getMonth() + 1}/${newDate.getFullYear()} ${isTime ? " - " + strTime : ''}`
+    }
+
+    getUpcomingBookingHistory = (token: string | null) => {
+        const header = {
+            "Content-Type": "application/json",
+            token
+        };
+        const requestMessage = new Message(
+            getName(MessageEnum.RestAPIRequestMessage)
+        );
+        this.getUpcomingBookingHistoryApiId = requestMessage.messageId;
+        requestMessage.addData(
+            getName(MessageEnum.RestAPIResponceEndPointMessage),
+            "upcoming_bookings"
+        );
+        requestMessage.addData(
+            getName(MessageEnum.RestAPIRequestHeaderMessage),
+            JSON.stringify(header)
+        );
+        requestMessage.addData(
+            getName(MessageEnum.RestAPIRequestMethodMessage),
+            "GET"
+        );
+        runEngine.sendMessage(requestMessage.id, requestMessage);
+    };
+
+    getPreviousBookingHistory = (token: string | null) => {
+        const header = {
+            "Content-Type": "application/json",
+            token
+        };
+        const requestMessage = new Message(
+            getName(MessageEnum.RestAPIRequestMessage)
+        );
+        this.getPreviousBookingHistoryApiId = requestMessage.messageId;
+        requestMessage.addData(
+            getName(MessageEnum.RestAPIResponceEndPointMessage),
+            "booking_history"
+        );
+        requestMessage.addData(
+            getName(MessageEnum.RestAPIRequestHeaderMessage),
+            JSON.stringify(header)
+        );
+        requestMessage.addData(
+            getName(MessageEnum.RestAPIRequestMethodMessage),
+            "GET"
+        );
+        runEngine.sendMessage(requestMessage.id, requestMessage);
+    };
+
+    postCancelBooking = (token: string | null, formdata: { booking_id: string }) => {
+        const header = {
+            "Content-Type": "application/json",
+            token
+        };
+        const requestMessage = new Message(
+            getName(MessageEnum.RestAPIRequestMessage)
+        );
+        this.getPreviousBookingHistoryApiId = requestMessage.messageId;
+        requestMessage.addData(
+            getName(MessageEnum.RestAPIResponceEndPointMessage),
+            "cancel_booking"
+        );
+        requestMessage.addData(
+            getName(MessageEnum.RestAPIRequestHeaderMessage),
+            JSON.stringify(header)
+        );
+        requestMessage.addData(
+            getName(MessageEnum.RestAPIRequestBodyMessage),
+            JSON.stringify(formdata)
+        );
+        requestMessage.addData(
+            getName(MessageEnum.RestAPIRequestMethodMessage),
+            "POST"
+        );
+        runEngine.sendMessage(requestMessage.id, requestMessage);
+    };
+
+    async receive(from: string, message: Message) {
+
+        runEngine.debugLog("Message Recived", message);
+        if (message.id === getName(MessageEnum.RestAPIResponceMessage)) {
+            const apiRequestCallId = message.getData(
+                getName(MessageEnum.RestAPIResponceDataMessage)
+            );
+            let responseJson = message.getData(
+                getName(MessageEnum.RestAPIResponceSuccessMessage)
+            );
+
+            let errorReponse = message.getData(
+                getName(MessageEnum.RestAPIResponceErrorMessage)
+            );
+            if (apiRequestCallId === this.getUpcomingBookingHistoryApiId) {
+                if (responseJson && !responseJson.errors && responseJson.data) {
+                    this.setState({ schedulingList: responseJson.data });
+                    runEngine.debugLog("schedulingList", this.state.schedulingList);
+                } else {
+                    this.parseApiCatchErrorResponse(errorReponse);
+                }
+            } else if (apiRequestCallId === this.getPreviousBookingHistoryApiId) {
+                if (responseJson && !responseJson.errors && responseJson.data) {
+                    this.setState({ schedulingList: responseJson.data });
+                    runEngine.debugLog("schedulingList", this.state.schedulingList);
+                } else {
+                    this.parseApiCatchErrorResponse(errorReponse);
+                }
+            }
+        }
+    }
+}

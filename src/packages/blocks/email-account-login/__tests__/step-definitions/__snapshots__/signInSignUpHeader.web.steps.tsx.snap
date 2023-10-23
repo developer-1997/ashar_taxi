@@ -1,0 +1,133 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SignInSignUpHeader Sign In Sign Up Header 1`] = `
+<Fragment>
+  <Styled(MuiBox)
+    display="flex"
+    flexDirection="row"
+    justifyContent="flex-end"
+    style={
+      Object {
+        "marginBottom": "40px",
+        "width": "100%",
+      }
+    }
+  >
+    <Link
+      replace={false}
+      to="LandingPage"
+    >
+      <img
+        alt="Logo"
+        src={
+          Object {
+            "testUri": "../../../packages/blocks/email-account-login/assets/logo.png",
+          }
+        }
+        style={
+          Object {
+            "width": "155px",
+          }
+        }
+      />
+    </Link>
+  </Styled(MuiBox)>
+  <Styled(MuiBox)
+    style={
+      Object {
+        "display": "flex",
+        "justifyContent": "center",
+        "marginTop": "20px",
+        "width": "100%",
+      }
+    }
+  >
+    <WithStyles(ForwardRef(Typography))
+      style={
+        Object {
+          "borderRight": "1px solid #c5c5c5",
+          "fontSize": "24px",
+          "fontWeight": "bold",
+          "textAlign": "center",
+          "width": "50%",
+        }
+      }
+    >
+      <Styled(a)
+        style={
+          Object {
+            "color": "#090069",
+            "cursor": "pointer",
+            "fontSize": "26px",
+            "margin": 0,
+            "paddingBottom": "15px",
+            "position": "relative",
+            "textDecoration": "none",
+          }
+        }
+        variant="h4"
+      >
+        <span
+          className="loginHeader"
+          data-test-id="sign-in-route"
+          style={
+            Object {
+              "color": "#090069",
+              "cursor": "pointer",
+              "fontSize": "26px",
+              "margin": 0,
+              "paddingBottom": "15px",
+              "position": "relative",
+              "textDecoration": "none",
+            }
+          }
+        >
+          Sign In
+        </span>
+      </Styled(a)>
+    </WithStyles(ForwardRef(Typography))>
+    <WithStyles(ForwardRef(Typography))
+      style={
+        Object {
+          "fontSize": "24px",
+          "fontWeight": "bold",
+          "textAlign": "center",
+          "width": "50%",
+        }
+      }
+    >
+      <Link
+        replace={false}
+        style={
+          Object {
+            "color": "#908f9d",
+            "cursor": "pointer",
+            "fontSize": "26px",
+            "paddingBottom": "15px",
+            "position": "relative",
+            "textDecoration": "none",
+          }
+        }
+        to="/EmailAccountRegistration"
+      >
+        <span
+          className="loginHeader"
+          data-test-id="sign-up-route"
+          style={
+            Object {
+              "color": "#908f9d",
+              "cursor": "pointer",
+              "fontSize": "26px",
+              "paddingBottom": "15px",
+              "position": "relative",
+              "textDecoration": "none",
+            }
+          }
+        >
+          Sign Up
+        </span>
+      </Link>
+    </WithStyles(ForwardRef(Typography))>
+  </Styled(MuiBox)>
+</Fragment>
+`;

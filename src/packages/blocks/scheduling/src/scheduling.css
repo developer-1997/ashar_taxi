@@ -1,0 +1,269 @@
+.SchedulingPageHeader {
+    border: 1px solid #DFDFDF;
+    background: #FFF;
+    filter: blur(0px);
+    padding: 0 72px;
+}
+
+.SchedulingPageHeader ul {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.SchedulingPageHeader ul li {
+    position: relative;
+    color: #8F8F9C;
+    font-family: var(--outfitRegular);
+    font-size: 22px;
+    font-weight: 500;
+    line-height: normal;
+    padding: 20px 0;
+}
+
+.SchedulingPageHeader ul li.active {
+    color: #1F1F1F;
+}
+
+.SchedulingPageHeader ul li.active::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 54px;
+    height: 3px;
+    border-radius: 4px;
+    background: #090168;
+}
+
+.SchedulingPageBody {
+    padding: 30px 72px;
+    background: #F8F8FD;
+}
+
+.MainBox {
+    padding: 25px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px 0 rgba(215, 215, 215, 0.5);
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.MainBox+.MainBox {
+    margin-top: 20px;
+}
+
+.MainBox+.MainBox {
+    margin-top: 20px;
+}
+
+.MainBox .imgBox {
+    width: 245px;
+}
+
+.MainBox .imgBox img {
+    width: 100%;
+    aspect-ratio: 5/4.7;
+    object-fit: fill;
+}
+
+.MainBox .right {
+    flex-grow: 1;
+}
+
+.MainBox .heading {
+    border-bottom: 1px solid #dfdfdf;
+    padding-bottom: 9px;
+}
+
+.MainBox .heading h4 {
+    margin: 0;
+    font-family: var(--outfitMedium);
+    font-size: 26px;
+    color: #1f1f1f;
+}
+
+.MainBox .body {
+    padding: 10px 0 0 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 20px;
+}
+
+.MainBox .body .details p {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-family: var(--outfitRegular);
+    font-size: 18px;
+    color: #3f3f3f;
+}
+
+.MainBox .body .details p+p {
+    margin-top: 12px;
+}
+
+.MainBox .body .details p .label {
+    min-width: 201px;
+}
+
+.MainBox .body .details p strong {
+    color: #1f1f1f
+}
+
+.MainBox .body .actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    min-height: 6rem;
+}
+
+.MainBox .body .actions .date {
+    font-size: 16px;
+    color: #1F1F1F;
+    font-family: var(--outfitMedium);
+}
+
+.MainBox .body .actions .btnList {
+    display: flex;
+    gap: 13px;
+    align-content: center;
+    justify-content: flex-end;
+}
+
+.MainBox .body .actions .btnList .btn {
+    width: 160px;
+    height: 50px;
+    font-family: var(--outfitMedium);
+    /* padding: 12px 49.5px 13px 48.5px; */
+    border-radius: 10px;
+    border: solid 1px #090168;
+    font-size: 20px;
+    color: #090168;
+    background: transparent;
+}
+
+.MainBox .body .actions .btnList .btn.primary {
+    border-color: #c8c7c7;
+    background-color: #05bf61;
+    color: #ffffff;
+}
+
+.Rectangle {
+    max-width: 1007px;
+    height: 80px;
+    border-radius: 8px;
+    background-color: #ffc0c4;
+    color: #ff3b30;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+}
+
+.Rectangle .No-available-cars {
+    font-family: var(--PoppinsRegular);
+    font-size: 24px;
+    letter-spacing: 0.12px;
+}
+
+.MuiDialog-paperWidthMd{
+    width: 100%;
+}
+
+.BookingDetails .RentalPeriodHeading {
+    color: #222B45;
+    font-family: var(--outfitRegular);
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0;
+    text-align: left;
+}
+
+.BookingDetails .RentalPeriodGridBoxMenu {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    /* grid-template-columns: repeat(5, auto); */
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.BookingDetails .RentalPeriodGridBoxMenu .RentalPeriodGridBoxMenuItem {
+    max-width: 155px;
+    width: 100%;
+    border-radius: 12px;
+    background: #F7F8FA;
+    padding: 14px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.BookingDetails .RentalPeriodGridBoxMenu .RentalPeriodGridBoxMenuItem.selected {
+    background-color: #04C061;
+}
+
+.BookingDetails .RentalPeriodGridBoxMenu .RentalPeriodGridBoxMenuItem .heading {
+    color: #24273A;
+    margin: 6px 0;
+    font-size: 20px;
+}
+
+.BookingDetails .RentalPeriodGridBoxMenu .RentalPeriodGridBoxMenuItem .price {
+    color: #95989F;
+    font-size: 16px;
+}
+
+.BookingDetails .RentalPeriodGridBoxMenu .RentalPeriodGridBoxMenuItem.selected .heading,
+.BookingDetails .RentalPeriodGridBoxMenu .RentalPeriodGridBoxMenuItem.selected .price {
+    color: #ffffff;
+}
+
+.BookingDetails .RentalPeriodGridBoxMenu>div>img {
+    width: 100%;
+}
+
+.MuiPaper-root .MuiDialogContent-root .BookingDetails p.error{
+    color: red;
+    margin-bottom: 10px;
+}
+
+.ExtendBookingModalActionBtn{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 900px) {
+    .SchedulingPageBody {
+        padding: 30px;
+    }
+    .MainBox .body {
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    .MainBox .body .actions .btnList .btn {
+        width: 128px;
+        height: 40px;
+        border-radius: 8px;
+        font-size: 16px;
+    }
+    .MainBox .body .details p .label {
+        width: 100%;
+    }
+}

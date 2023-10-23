@@ -1,0 +1,595 @@
+@import url('../../../web/src/GlobleStyle.css');
+
+.CataloguePageFiltersBox {
+    width: 100%;
+    margin: auto;
+    background: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.CataloguePageFilterschildBox {
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+a {
+    text-align: center !important;
+    display: block !important;
+}
+
+.CataloguePageFiltersSubBox {
+    position: relative;
+    width: 98% !important;
+    border-radius: 8px;
+    background: white !important;
+    border: 0.5px solid #c1c3c6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .8rem;
+    padding: 10px;
+}
+
+.rentalCardInputText,
+.rentalCardInputText .MuiFormControlLabel-label {
+    color: #3f3f3f;
+    font-size: 20px !important;
+    font-family: var(--outfitSemiBold) !important;
+}
+
+.menuContainer2 {
+    position: absolute !important;
+    top: 11% !important;
+    left: -4% !important;
+
+}
+
+.CataloguePageFiltersSubBox:hover {
+    cursor: pointer;
+    background: #ecebeb;
+}
+
+.iconText .iconImage {
+    color: #8f8f9c;
+    font-size: 17px !important;
+    font-family: var(--outfitRegular) !important;
+    font-weight: 400;
+}
+
+.CataloguePageFiltersSubBox .MuiTypography-body1 {
+    color: rgba(59, 59, 59, 0.64);
+    font-size: 24px !important;
+    font-family: var(--outfitRegular) !important;
+}
+
+.CataloguePageFiltersSubBox .iconImage {
+    height: 20px;
+    opacity: 1;
+}
+
+.BookNowButtonForFileterCatalogue {
+    font-size: 18px !important;
+    text-transform: none !important;
+    background-color: #05BE61 !important;
+    color: #FFF !important;
+}
+
+.rentalPeriodContainer .locationMenuGridBox {
+    width: 289px;
+    padding-top: 20px;
+    margin-top: 10px;
+    border-top: 1px solid #EAEBED;
+}
+
+.rentalPeriodContainer .locationMenuGridBox>div {
+    display: flex;
+}
+
+.rentalPeriodContainer .locationMenuListChildBox {
+    border-radius: 5px;
+    border: 1px solid #979797;
+    background: #FFF;
+    display: flex;
+    align-items: center;
+    padding: 6px 14px;
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+.cardRental {
+    padding: 21px 16px 26px 17px;
+    box-shadow: none !important;
+}
+
+.rentalPeriodContainer {
+    background-color: white;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 31px 40px 31px;
+}
+
+.RentalPeriodGridBoxMenu {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.RentalPeriodGridBoxMenu .RentalPeriodGridBoxMenuItem {
+    width: 100px;
+    border-radius: 12px;
+    background: #F7F8FA;
+    padding: 10px;
+    text-align: center;
+}
+
+.RentalPeriodGridBoxMenu .RentalPeriodGridBoxMenuItem.selected {
+    background-color: #04C061;
+}
+
+.RentalPeriodGridBoxMenu .RentalPeriodGridBoxMenuItem .heading {
+    color: #24273A;
+    margin: 7px 0;
+    font-size: 13px;
+}
+
+.RentalPeriodGridBoxMenu .RentalPeriodGridBoxMenuItem .price {
+    color: #95989F;
+}
+
+.RentalPeriodGridBoxMenu .RentalPeriodGridBoxMenuItem.selected .heading,
+.RentalPeriodGridBoxMenu .RentalPeriodGridBoxMenuItem.selected .price {
+    color: #ffffff;
+}
+
+.RentalPeriodGridBoxMenu>div>img {
+    width: 100%;
+}
+
+.RentalPeriodGridBoxMenu>div>button {
+    background-color: #010039;
+    color: #E4E4E4;
+}
+
+
+.ForSmallScreenText {
+    display: none;
+}
+
+.dateRangeContainer {
+    padding-left: 8px;
+}
+
+
+.dateRangeContainer .rs-picker-toggle-wrapper {
+    position: relative;
+    width: 99% !important;
+    border-radius: 8px;
+    background: white !important;
+    border: 0.5px solid #c1c3c6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .8rem;
+    /* padding: 5px 2px; */
+    min-width: auto;
+}
+
+.dateRangeContainer .rs-picker-toggle-value {
+    font-size: 20px;
+    text-align: left;
+}
+
+.dateRangeContainer .rs-picker-default .rs-picker-toggle {
+    border: none;
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.dateRangeContainer .rs-picker-toggle .rs-picker-toggle-placeholder {
+    color: rgba(59, 59, 59, 0.64);
+    font-size: 24px !important;
+    font-family: var(--outfitRegular) !important;
+}
+
+.dateRangeContainer .rs-picker-toggle-textbox {
+    padding-left: 33px;
+    font-size: 16px;
+    color: rgba(59, 59, 59, 0.99);
+}
+
+.dateRangeContainer .rs-picker-default .rs-picker-toggle.rs-btn {
+    padding-top: 11px;
+    padding-bottom: 11px;
+}
+
+.dateRangeContainer .rs-picker-toggle-caret {
+    top: 18px !important;
+    font-size: 20px;
+    color:#575757 !important;
+}
+.dateRangeContainer .rs-picker-toggle-clean {
+    top: 13px !important;
+    right: 40px !important;
+    font-size: 20px;
+}
+
+.weeklyChangeBox {
+    display: flex;
+    height: 48px;
+    padding: 0 10px;
+    justify-Content: space-between;
+    border: solid 1px #dfdfdf;
+    align-items: center;
+    border-radius: 4px;
+    margin: 15px 0;
+}
+
+.rs-picker-daterange-menu .rs-picker-toolbar {
+    max-width: 100% !important;
+}
+
+.rs-picker-daterange-menu .rs-picker-toolbar .rs-picker-toolbar-right button {
+    background-color: #010039;
+    padding: 10px 22px;
+    border-radius: 2px;
+}
+
+.monthlyCheckBox {
+    display: flex;
+    height: 48px;
+    padding: 0 10px;
+    justify-content: space-between;
+    border: solid 1px #dfdfdf;
+    margin: 15px 0;
+    border-radius: 4px;
+    align-items: center
+}
+
+.halfShiftCheck {
+    margin: 15px 0;
+    border: solid 1px #dfdfdf;
+    border-Radius: 4px;
+}
+
+.SearchButton {
+    width: 50%;
+    min-width: 200px;
+    height: 60px;
+    background-color: #090168 !important;
+    font-size: 22px !important;
+    font-weight: 500;
+    font-family: var(--outfitRegular) !important;
+    text-transform: none !important;
+    border-radius: 10px !important;
+}
+
+.halfShiftCheckBox {
+    display: flex;
+    flex-Direction: row;
+    justify-Content: space-between;
+    align-items: center;
+    border-bottom: 0.5px solid #d7d1d1
+}
+
+.halfShiftCheckboxTwo {
+    display: flex;
+    flex-Direction: row;
+    justify-Content: space-between;
+    align-Items: center;
+}
+
+.rs-picker-menu {
+    left: 50%;
+    transform: translateX(-25%);
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0px 0px 15px 3px #00000040;
+    overflow: visible;
+}
+
+.rs-picker-menu::before {
+    content: '';
+    display: inline-block;
+    background-color: #ffffff;
+    position: absolute;
+    top: -15px;
+    left: 30%;
+    width: 15px;
+    height: 15px;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.rs-picker-menu .rs-calendar {
+    min-width: 300 !important;
+}
+
+.rs-btn-primary {
+    background-color: #090168 !important;
+    padding: 10px 18px !important;
+    border-radius: 2px !important;
+}
+
+.rs-picker-menu .rs-picker-toolbar-ranges {
+    display: none;
+}
+
+.rs-calendar-table-cell-is-today .rs-calendar-table-cell-content {
+    border-color: #17995B;
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 1px rgb(5, 190, 97) !important;
+}
+
+.rs-calendar-table-cell-selected .rs-calendar-table-cell-content {
+    background-color: rgb(5, 190, 97) !important;
+    border-radius: 100px;
+}
+
+.rs-calendar-table-cell-selected-start::before {
+    width: 50%;
+    right: 0;
+    height: 30px;
+    margin-top: 0;
+    background-color: #E7F8F0;
+}
+
+.rs-calendar-table-cell-selected-end::before {
+    width: 50%;
+    left: 0;
+    height: 30px;
+    margin-top: 0;
+    background-color: #E7F8F0;
+}
+
+.rentalPeriodGrid {
+    padding-bottom: 15px;
+}
+
+.rs-picker-menu .rs-calendar .rs-calendar-table-cell .rs-calendar-table-cell-content {
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rs-picker-menu .rs-calendar .rs-calendar-table-cell:hover .rs-calendar-table-cell-content {
+    color: rgb(5, 190, 97);
+    /* background-color: rgba(5, 190, 97, .1) !important; */
+    /* border-radius: 100px; */
+}
+
+.rs-picker-menu .rs-calendar .rs-calendar-table-cell-selected:hover .rs-calendar-table-cell-content {
+    color: white
+}
+
+.rs-calendar-table-cell-in-range::before {
+    height: 30px;
+    margin-top: 0;
+    background-color: #E7F8F0;
+}
+
+
+.rs-picker-daterange-menu .rs-calendar:first-child {
+    border-right: none !important;
+}
+
+.rs-picker-has-value .rs-btn .rs-picker-toggle-value,
+.rs-picker-has-value .rs-picker-toggle .rs-picker-toggle-value {
+    color: rgba(59, 59, 59, 0.64) !important;
+}
+
+.rs-calendar-table-cell-content {
+    font-size: 12px;
+    color: #606D97;
+    font-weight: 500;
+}
+
+.rs-picker-toolbar {
+    border-top: none !important;
+}
+
+.rs-anim-fade.rs-anim-in {
+    box-shadow: 0px 2px 10px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+}
+
+@media only screen and (max-width: 1350px) {
+    .CataloguePageFilterschildBox {
+        width: 90%;
+    }
+
+    .CataloguePageFiltersSubBox .MuiTypography-body1 {
+        font-size: 17px !important;
+    }
+
+    .rentalPeriodGrid {
+        padding: 14px;
+    }
+
+    .dateRangeContainer .rs-picker-toggle .rs-picker-toggle-placeholder {
+        color: rgba(59, 59, 59, 0.64);
+        font-size: 17px !important;
+        font-family: var(--outfitRegular) !important;
+    }
+
+    .dateRangeContainer .rs-picker-toggle-caret {
+        top: 14px !important;
+        font-size: 20px;
+        color:#575757 !important;
+    }
+
+    .lableCheckbox .MuiTypography-body1 {
+        font-size: 17px !important;
+        font-weight: 500 !important;
+        font-family: var(--outfitRegular) !important;
+        letter-spacing: normal !important;
+        color: #3f3f3f !important;
+    }
+
+    .checkboxText {
+        font-size: 17px !important;
+        font-weight: 500 !important;
+        font-stretch: normal !important;
+        font-style: normal !important;
+        line-height: normal !important;
+        letter-spacing: normal !important;
+        color: #3f3f3f !important;
+
+    }
+}
+
+@media only screen and (max-width: 1310px) {
+    .rs-picker-daterange-calendar-group {
+        height: 530px !important;
+        min-width: 200px !important;
+        max-width: 300px;
+    }
+}
+
+@media only screen and (max-width: 1120px) {
+    .rentalPeriodContainer {
+        padding: 20px 0;
+    }
+
+    .rentalPeriodGrid {
+        padding: 10px;
+    }
+
+    .dateRangeContainer {
+        padding-left: 0;
+    }
+
+
+    .CataloguePageFilterschildBox {
+        width: 100%;
+        flex-direction: column;
+        justify-content: unset;
+        align-items: unset;
+    }
+
+    .CataloguePageFiltersSubBox {
+        height: 50px;
+        width: 100% !important;
+        margin: 0 auto 10px;
+        justify-content: space-between;
+    }
+
+    .CataloguePageFilterschildBox .BookNowButtonLink {
+        text-align: center;
+    }
+
+    .CataloguePageFilterschildBox .BookNowButtonForFileterCatalogue {
+        width: 40%;
+    }
+
+    .dateRange .rs-picker-toggle-wrapper {
+        display: block;
+    }
+
+    .dateRange .rs-picker-default .rs-picker-toggle.rs-btn {
+        width: 40%;
+        margin: 0 auto 10px;
+        display: block;
+    }
+
+    .dateRange .rs-picker-toggle-textbox {
+        padding-left: 36px;
+    }
+
+    .dateRange .rs-picker-toggle .rs-picker-toggle-placeholder {
+        padding-left: 15px;
+    }
+
+    .rs-picker-menu {
+        transform: translateX(0);
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .CataloguePageFiltersSubBox {
+        width: 80%;
+    }
+
+    .CataloguePageFilterschildBox .BookNowButtonForFileterCatalogue {
+        width: 80%;
+    }
+
+    .dateRange .rs-picker-default .rs-picker-toggle.rs-btn {
+        width: 80%;
+    }
+
+    .RentalPeriodGridBoxMenu {
+        grid-template-columns: repeat(2, 1fr)
+    }
+}
+
+@media only screen and (max-width: 1350px) {
+    .CataloguePageFilterschildBox {
+        width: 90%;
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+    .CataloguePageFiltersSubBox {
+        width: 80%;
+    }
+
+    .CataloguePageFilterschildBox .BookNowButtonForFileterCatalogue {
+        width: 80%;
+    }
+
+}
+
+.mainGrid {
+    margin-left: 0px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    width: 100%!important;
+    padding: 0px 20px;
+    grid-row-gap: 15px;
+}
+
+.fullShift {
+    display: flex;
+    height: 48px;
+    padding: 0px 10px;
+    justify-content: space-between;
+    border: solid 1px #dfdfdf;
+    margin: 15px 0;
+    border-radius: 4px;
+    align-items: center;
+}
+
+.lableCheckbox .MuiTypography-body1 {
+    font-size: 20px !important;
+    font-weight: 500 !important;
+    font-stretch: normal !important;
+    font-style: normal !important;
+    line-height: normal !important;
+    letter-spacing: normal !important;
+    color: #3f3f3f !important;
+}
+
+.checkboxText {
+    font-size: 20px !important;
+    font-weight: 500 !important;
+    font-stretch: normal !important;
+    font-style: normal !important;
+    line-height: normal !important;
+    letter-spacing: normal !important;
+    color: #3f3f3f !important;
+
+}

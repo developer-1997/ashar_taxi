@@ -1,0 +1,51 @@
+.MuiPaper-root.MuiPaper-rounded {
+    border-radius: 15px;
+}
+
+.MuiDialogTitle-root {
+    border-bottom: 1px solid #DFDFDF;
+}
+
+.MuiDialogTitle-root h2 {
+    color: #3F3F3F;
+    text-align: center;
+    font-family: var(--outfitMedium);
+    font-size: 20px;
+}
+
+.MuiPaper-root .MuiDialogContent-root{
+    padding: 15px 33px;
+    text-align: center;
+}
+
+.MuiPaper-root .MuiDialogContent-root p{
+    color: #3F3F3F;
+    font-size: 18px;
+    font-family: var(--outfitRegular);
+}
+.MuiPaper-root .MuiDialogContent-root p.Text-Center-Menu-Placeholder{
+    font-size: 22px;
+    line-height: 1.23;
+    font-family: var(--outfitMedium);
+}
+.yesBtn{
+    width: 250px;
+    height: 50px;
+    font-size: 18px;
+    font-family: var(--outfitMedium);
+    border-radius: 15px;
+    background-color: #090168;
+    color: #ffffff;
+    border: none;
+}
+.cancelBtn{
+    width: 250px;
+    height: 50px;
+    font-size: 14px;
+    font-family: var(--outfitRegular);
+    /* border-radius: 15px; */
+    background-color: transparent;
+    text-decoration-line: underline;
+    color: #8f8f9c;
+    border: none;
+}

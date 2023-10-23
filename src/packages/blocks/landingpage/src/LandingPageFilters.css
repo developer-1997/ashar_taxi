@@ -1,0 +1,439 @@
+@import url("../../../web/src/GlobleStyle.css");
+
+.LandingPageFiltersBox {
+    width: 100%;
+    margin: auto;
+    background: #FFF;
+    box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, .12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 33px 0;
+}
+
+.LandingPageFilterschildBox {
+    width: 75%;
+    display: flex;
+    align-items: center;
+}
+.LandingPageFilterschildBox .dropdownMain {
+    margin-right: 22px;
+    min-width: 18%;
+}
+a {
+    text-align: center !important;
+    display: block !important;
+}
+
+.LandingPageFiltersSubBox {
+    position: relative;
+    width: 100%;
+    border-radius: 8px;
+    background: #F5F5F5;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: .8rem;
+    padding: 10px;
+}
+
+
+
+.menuContainer2 {
+    position: absolute !important;
+    top: 11% !important;
+    left: -4% !important;
+
+}
+
+.LandingPageFiltersSubBox:hover {
+    cursor: pointer;
+    background: #ecebeb;
+}
+
+.iconText,
+.iconImage {
+    color: rgba(59, 59, 59, 0.64);
+    font-size: 17px !important;
+    font-family: var(--outfitRegular) !important;
+}
+
+.iconImage {
+    height: 20px;
+    opacity: .5;
+}
+
+.locationMenuGridBox {
+    width: 289px;
+    padding-top: 20px;
+    margin-top: 10px;
+    border-top: 1px solid #EAEBED;
+}
+
+.locationMenuGridBox label span:nth-child(2){
+    flex-basis: 100%;
+
+}
+
+.locationMenuListChildBox {
+    border-radius: 5px;
+    border: 1px solid #979797;
+    background: #FFF;
+    display: flex;
+    align-items: center;
+    padding: 6px 14px;
+}
+
+.RentalPeriodGridBoxMenu {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.RentalPeriodGridBoxMenu .RentalPeriodGridBoxMenuItem {
+    width: 100px;
+    border-radius: 12px;
+    background: #F7F8FA;
+    padding: 10px;
+    text-align: center;
+}
+
+.RentalPeriodGridBoxMenu .RentalPeriodGridBoxMenuItem.selected {
+    background-color: #04C061;
+}
+
+.RentalPeriodGridBoxMenu .RentalPeriodGridBoxMenuItem .heading {
+    color: #24273A;
+    margin: 7px 0;
+    font-size: 13px;
+}
+
+.RentalPeriodGridBoxMenu .RentalPeriodGridBoxMenuItem .price {
+    color: #95989F;
+}
+
+.RentalPeriodGridBoxMenu .RentalPeriodGridBoxMenuItem.selected .heading,
+.RentalPeriodGridBoxMenu .RentalPeriodGridBoxMenuItem.selected .price {
+    color: #ffffff;
+}
+
+.RentalPeriodGridBoxMenu>div>img {
+    width: 100%;
+}
+
+.RentalPeriodGridBoxMenu>div>button {
+    background-color: #010039;
+    color: #E4E4E4;
+}
+
+.BookNowButtonForFileter {
+    font-family: var(--outfitRegular) !important;
+    font-size: 22px !important;
+    font-weight: 600 !important;
+    text-transform: none !important;
+    padding: 8px 28px 8px 30px !important;
+    border-radius: 8px !important;
+    color: #FFF !important;
+    background-color: #05BE61 !important;
+}
+
+.ForSmallScreenText {
+    display: none;
+}
+
+.dateRange {
+    position: relative;
+}
+
+.dateRange .rs-picker-default:not(.rs-picker-disabled) .rs-btn:focus,
+.dateRange .rs-picker-default:not(.rs-picker-disabled) .rs-picker-toggle:focus {
+    border-color: white;
+    outline: none;
+    box-shadow: none;
+}
+
+.dateRange .rs-picker-default:not(.rs-picker-disabled) .rs-btn:hover,
+.dateRange .rs-picker-default:not(.rs-picker-disabled) .rs-picker-toggle:hover {
+    border-color: white;
+    background-color: #ecebeb !important;
+}
+
+.dateRange .rs-picker-default .rs-picker-toggle {
+    border: none;
+    display: flex !important;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #f5f5f5 !important;
+}
+
+.dateRange .rs-picker-daterange .rs-picker-toggle.rs-btn .rs-picker-toggle-caret {
+    right: none;
+    left: 8px;
+    position: unset;
+    font-size: 16px;
+}
+
+.dateRange .rs-picker-toggle .rs-picker-toggle-placeholder {
+    padding-left: 16px;
+    font-size: 17px;
+    font-family: var(--outfitRegular) !important;
+    color: rgba(59, 59, 59, 0.64);
+}
+
+.dateRange .rs-picker-toggle-textbox {
+    padding-left: 33px;
+    font-size: 1rem;
+    color: rgba(59, 59, 59, 0.99);
+}
+.rs-picker-daterange-header {
+    font-family: var(--outfitRegular) !important;
+    color: #0d256e;
+}
+.rs-picker-menu {
+    left: 50%;
+    transform: translateX(-25%);
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0px 0px 15px 3px #00000040;
+    overflow: visible;
+}
+.rs-picker-menu::before {
+    content: '';
+    display: inline-block;
+    background-color: #ffffff;
+    position: absolute;
+    top: -15px;
+    left: 30%;
+    width: 15px;
+    height: 15px;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.rs-picker-menu .rs-calendar {
+    min-width: 300 !important;
+}
+
+.rs-btn-primary {
+    background-color: #090168 !important;
+    padding: 10px 18px !important;
+    border-radius: 2px !important;
+}
+
+.rs-picker-menu .rs-picker-toolbar-ranges {
+    display: none;
+}
+.rs-picker-daterange-menu .rs-picker-toolbar{
+    max-width: 100%;
+}
+.rs-picker-daterange-menu .rs-picker-toolbar .rs-picker-toolbar-right button {
+    background-color: #010039;
+    padding: 10px 22px;
+    border-radius: 2px;
+}
+
+.rs-calendar-table-cell-is-today .rs-calendar-table-cell-content{
+    border-color: #17995B;
+    border-radius: 50%;
+}
+.rs-calendar-table-cell-selected .rs-calendar-table-cell-content {
+    background-color: rgb(5, 190, 97) !important;
+    border-radius: 100px;
+}
+
+.rs-calendar-table-cell-selected-start::before{
+    width: 50%;
+    right: 0;
+    height: 30px;
+    margin-top: 0;
+    background-color: #E7F8F0;
+}
+.rs-calendar-table-cell-selected-end::before{
+    width: 50%;
+    left: 0;
+    height: 30px;
+    margin-top: 0;
+    background-color: #E7F8F0;
+}
+.rs-picker-menu .rs-calendar .rs-calendar-table-cell .rs-calendar-table-cell-content{
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rs-picker-menu .rs-calendar .rs-calendar-table-cell:hover .rs-calendar-table-cell-content {
+    color: rgb(5, 190, 97) ;
+}
+.rs-picker-menu .rs-calendar .rs-calendar-table-cell-selected:hover .rs-calendar-table-cell-content {
+    color: white
+}
+.rs-calendar-table-cell-in-range::before{
+    height: 30px;
+    margin-top: 0;
+    background-color: #E7F8F0;
+}
+.rs-calendar-table-cell-is-today .rs-calendar-table-cell-content {
+    box-shadow: inset 0 0 0 1px rgb(5, 190, 97) !important;
+}
+
+.rs-picker-daterange-menu .rs-calendar:first-child {
+    border-right: none !important;
+}
+
+.rs-picker-has-value .rs-btn .rs-picker-toggle-value,
+.rs-picker-has-value .rs-picker-toggle .rs-picker-toggle-value {
+    color: rgba(59, 59, 59, 0.64) !important;
+    padding-left: 16px;
+    max-width: 130px;
+}
+
+.rs-calendar-table-cell-content {
+    font-size: 14px;
+    color: #455997;
+    font-weight: 500;
+}
+
+.rs-picker-toolbar {
+    border-top: none !important;
+}
+
+.rs-anim-fade.rs-anim-in {
+    box-shadow: 0px 2px 10px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+}
+.rs-picker-default .rs-picker-toggle.rs-btn {
+    padding-top: 11px;
+    padding-bottom: 11px;
+}
+.rs-picker-toggle-wrapper {
+    min-width: 100%;
+}
+@media only screen and (max-width: 1560px) {
+    .LandingPageFilterschildBox {
+        justify-content: space-between;
+    }
+    .LandingPageFilterschildBox .dropdownMain {
+        margin-right: unset;
+    }
+}
+
+@media only screen and (max-width: 1450px) {
+    .LandingPageFilterschildBox {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 1310px) {
+    .rs-picker-daterange-calendar-group {
+        height: 530px !important;
+        min-width: 200px !important;
+        max-width: 300px;
+    }
+}
+
+@media only screen and (max-width: 1180px) {
+    .LandingPageFilterschildBox {
+        width: 100%;
+        flex-direction: column;
+        justify-content: unset;
+        align-items: unset;
+    }
+
+    .LandingPageFiltersSubBox {
+        height: 40px;
+        width: 40%;
+        margin: 0 auto 10px;
+        justify-content: flex-start;
+    }
+    .LandingPageFilterschildBox .BookNowButtonLink {
+        text-align: center;
+    }
+
+    .LandingPageFilterschildBox .BookNowButtonForFileter {
+        width: 40%;
+    }
+
+    .dateRange .rs-picker-toggle-wrapper {
+        display: block;
+    }
+
+    .dateRange .rs-picker-default .rs-picker-toggle.rs-btn {
+        width: 40%;
+        margin: 0 auto 10px;
+        display: block;
+    }
+
+    .dateRange .rs-picker-toggle-textbox {
+        padding-left: 36px;
+    }
+
+    .dateRange .rs-picker-toggle .rs-picker-toggle-placeholder {
+        padding-left: 15px;
+    }
+    .rs-picker-menu{
+        transform: translateX(0);
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .LandingPageFiltersSubBox {
+        width: 80%;
+    }
+
+    .LandingPageFilterschildBox .BookNowButtonForFileter {
+        width: 80%;
+    }
+
+    .dateRange .rs-picker-default .rs-picker-toggle.rs-btn {
+        width: 80%;
+    }
+    .RentalPeriodGridBoxMenu{
+        grid-template-columns: repeat(2, 1fr)
+    }
+}
+
+@media only screen and (max-width: 1350px) {
+    .LandingPageFilterschildBox {
+        width: 90%;
+    }
+}
+
+
+@media only screen and (max-width: 1120px) {
+    .LandingPageFilterschildBox {
+        width: 100%;
+        flex-direction: column;
+        justify-content: unset;
+        align-items: unset;
+    }
+
+    .LandingPageFiltersSubBox {
+        height: 40px;
+        width: 40%;
+        margin: 0 auto 10px;
+        justify-content: flex-start;
+    }
+
+    .LandingPageFilterschildBox .BookNowButtonLink {
+        text-align: center;
+    }
+
+    .LandingPageFilterschildBox .BookNowButtonForFileter {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .LandingPageFiltersSubBox {
+        width: 80%;
+    }
+
+    .LandingPageFilterschildBox .BookNowButtonForFileter {
+        width: 80%;
+        font-size: 20px !important;
+        padding: 6px 28px 6px 30px !important;
+    }
+
+}

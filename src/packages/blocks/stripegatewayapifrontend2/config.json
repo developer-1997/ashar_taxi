@@ -1,0 +1,65 @@
+{
+  "id": "stripegatewayapifrontend2",
+  "version": "0.0.2",
+  "status": "preAlpha",
+  "path": "./packages/blocks/stripegatewayapifrontend2",
+  "assembler-adapters": [],
+  "mobile": {
+    "merge-engine-navigation": {},
+    "assembler-exports": [
+      "Stripegatewayapifrontend2"
+    ],
+    "assembler-dependencies": [],
+    "catalog-dependencies": [
+      "core",
+      "utilities"
+    ],
+    "assembler-devDependencies": [],
+    "merge-engine-screens": {
+      "Stripegatewayapifrontend2": {
+        "file": "Stripegatewayapifrontend2.tsx",
+        "extends": "Stripegatewayapifrontend2Controller",
+        "ui-elements": [],
+        "imports": [
+          {
+            "value": "Stripegatewayapifrontend2Controller",
+            "path": "./Stripegatewayapifrontend2Controller"
+          },
+          {
+            "value": "{Props}",
+            "path": "./Stripegatewayapifrontend2Controller"
+          }
+        ]
+      }
+    }
+  },
+  "web": {
+    "merge-engine-navigation": {},
+    "assembler-exports": [
+      "Stripegatewayapifrontend2"
+    ],
+    "assembler-dependencies": [],
+    "catalog-dependencies": [
+      "core",
+      "utilities"
+    ],
+    "assembler-devDependencies": [],
+    "merge-engine-screens": {
+      "Stripegatewayapifrontend2": {
+        "file": "Stripegatewayapifrontend2.web.tsx",
+        "extends": "Stripegatewayapifrontend2Controller",
+        "ui-elements": [],
+        "imports": [
+          {
+            "value": "Stripegatewayapifrontend2Controller",
+            "path": "./Stripegatewayapifrontend2Controller"
+          },
+          {
+            "value": "{Props}",
+            "path": "./Stripegatewayapifrontend2Controller"
+          }
+        ]
+      }
+    }
+  }
+}

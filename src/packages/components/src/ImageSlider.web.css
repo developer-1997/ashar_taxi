@@ -1,0 +1,26 @@
+.image-slider .slider-item img {
+    width: 100%;
+}
+
+.image-slider .slider-dots {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 30px;
+    gap: 10px;
+}
+
+.image-slider .slider-dots li {
+    width: 106px;
+    border-radius: 5px;
+}
+
+.image-slider .slider-dots li img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.image-slider .slider-dots li.active {
+    border: 2px solid #090168;
+}

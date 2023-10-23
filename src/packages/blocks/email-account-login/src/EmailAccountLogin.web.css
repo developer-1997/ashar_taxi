@@ -1,0 +1,110 @@
+#rightBoxContainer {
+    height: auto !important;
+    margin: 0;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+}
+.MuiGrid-item{
+    width: 100%;
+}
+#linkToSignUpText {
+    font-size: 20px;    
+    padding-bottom: 5px;
+}
+.backToHomeButton {
+    color: #828282;
+    font-weight: 600;
+    font-size: 18px !important;
+    text-decoration: underline !important;
+    cursor: pointer;
+    padding: 0px !important;
+}
+.contentForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    min-height: min-content;
+    padding-right: 60px;
+}
+.fullGrid {
+    margin: 4rem 0 0 !important;
+}
+.logoContainerStyle { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 40px;
+}
+.logoImgStyle {
+    max-width: 155px;
+}
+
+.forgetPassword {
+    font-size: 16px !important;
+    font-weight: bold;
+    color: #3f3f3f;
+    text-align: right;
+}
+
+@media only screen and (max-width: 900px) {
+    #rightBoxContainer {
+        height: 50vh;
+        padding: 10px 20px;
+        min-height: 400px;
+    }
+    #linkToSignUpText {
+        width: 100%;
+        font-size: 14px;
+        margin-top: 30px;
+        padding-bottom: 20px;
+    }
+    #backToHomeContainer {
+        display: none;
+    }
+    .fullGrid {
+        margin-top: 0 !important;
+        width: 100% !important;
+        overflow: auto;
+    }
+    .forgetPassword {
+        font-size: 14px !important;
+        margin-top: -5px !important;
+    }
+    .contentForm {
+        padding-right: 0 !important;
+    }
+    .inputText div.MuiInput-root {
+        height: 48px !important;
+        margin: 0 !important;
+    }
+    .MuiGrid-spacing-xs-3 > .MuiGrid-item {
+        padding-top: 0 !important;
+    }
+    .inputText img {
+        top: 12px !important;
+    }
+    .logoContainerStyle { 
+        margin-top: 0 !important;
+        margin-bottom: 10px !important;
+    }
+    .logoImgStyle {
+        max-width: 80px;
+    }
+    span.loginHeader {
+        font-size: 22px !important;
+    }
+    button.loginHeader {
+        font-size: 16px !important;
+        margin-top: 5px !important;
+    }
+    a.loginHeader {
+        font-size: 16px !important;
+        margin-top: 5px !important;
+    }
+}
